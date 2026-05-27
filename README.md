@@ -40,7 +40,9 @@
 
 直接复制下面这句发给 Claude Code：
 
-> 帮我下载 vibe-coding-guide，地址是 https://github.com/gulugulu123A/vibe-coding-guide ，clone 下来之后引导我从里程碑 0 开始。
+```bash
+帮我下载 vibe-coding-guide，地址是 https://github.com/gulugulu123A/vibe-coding-guide ，之后引导我从里程碑 0 开始。
+```
 
 **方法 2：终端手动下载**
 
@@ -77,7 +79,3 @@ cd vibe-coding-guide
 ## 开源
 
 MIT License，欢迎 Fork、修改、翻译成其他语言，或者用你自己的项目案例重写一遍。
-
----
-
-**保持好奇，别回头。**
