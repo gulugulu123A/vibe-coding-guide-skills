@@ -1,3 +1,7 @@
+English | [中文](./README.md)
+
+---
+
 # Vibe Coding Guide for Beginners
 
 > Build a personal website from scratch and learn how to collaborate effectively with AI.
