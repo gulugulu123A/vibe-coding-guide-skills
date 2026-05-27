@@ -34,6 +34,25 @@
 | **确认清单** | 做完这一步要验证的事 |
 | **停下来想想** | 这一步你学到了什么，对应什么底层能力 |
 
+## 如何下载使用
+
+**方法 1：让 Claude Code 自动下载（推荐）**
+
+直接复制下面这句发给 Claude Code：
+
+> 帮我下载 vibe-coding-guide，地址是 https://github.com/gulugulu123A/vibe-coding-guide ，clone 下来之后引导我从里程碑 0 开始。
+
+**方法 2：终端手动下载**
+
+```bash
+git clone https://github.com/gulugulu123A/vibe-coding-guide.git
+cd vibe-coding-guide
+```
+
+然后用你喜欢的 AI 工具打开这个目录，告诉它：
+
+> 参考这个目录里的文档，引导我从里程碑 0 开始搭一个个人网站。
+
 ## 目录
 
 - [里程碑 0：开工之前先问自己三个问题](./00-check.md)

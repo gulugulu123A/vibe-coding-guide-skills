@@ -34,6 +34,25 @@ Work through 7 milestones in order. Each milestone includes:
 | **Confirmation Checklist** | Things to verify before moving on |
 | **Pause and Reflect** | What you learned and which core skills you're building |
 
+## How to Download
+
+**Method 1: Let Claude Code download it (Recommended)**
+
+Copy and send this to Claude Code:
+
+> Download the vibe-coding-guide from https://github.com/gulugulu123A/vibe-coding-guide, clone it, and then walk me through starting from Milestone 0.
+
+**Method 2: Download via terminal**
+
+```bash
+git clone https://github.com/gulugulu123A/vibe-coding-guide.git
+cd vibe-coding-guide
+```
+
+Then open this directory with your preferred AI tool and say:
+
+> Reference the docs in this directory and guide me through building a personal website starting from Milestone 0.
+
 ## Table of Contents
 
 - [Milestone 0: Three Questions Before You Start](./00-check.md)
