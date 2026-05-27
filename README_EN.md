@@ -40,7 +40,9 @@ Work through 7 milestones in order. Each milestone includes:
 
 Copy and send this to Claude Code:
 
-> Download the vibe-coding-guide from https://github.com/gulugulu123A/vibe-coding-guide, clone it, and then walk me through starting from Milestone 0.
+```bash
+Download the vibe-coding-guide from https://github.com/gulugulu123A/vibe-coding-guide, and then walk me through starting from Milestone 0.
+```
 
 **Method 2: Download via terminal**
 
@@ -77,7 +79,3 @@ This guide weaves together three frameworks:
 ## Open Source
 
 MIT License. Feel free to fork, modify, translate, or rewrite with your own project case study.
-
----
-
-**Stay curious. Don't look back.**
