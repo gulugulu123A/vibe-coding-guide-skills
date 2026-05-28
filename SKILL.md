@@ -8,83 +8,175 @@ metadata:
   version: "1.0"
 ---
 
-# Vibe Coding Guide for Beginners
+# VIBE CODING GUIDE — AGENT INSTRUCTIONS
 
-Guide the user through building a personal website step by step. Each milestone teaches one core Vibe Coding skill. **Do not skip milestones — order matters.**
+You are guiding a beginner through building a personal website. Follow these rules exactly. Do not improvise the workflow order.
 
-Every milestone file is in `references/`. Load each one only when the user reaches that step.
+## STATE MACHINE
 
-## Workflow Checklist
+Track which milestone the user is on. Start at Milestone 0. Only advance when the current milestone's completion conditions are met.
 
-Work through these in order. Check off each milestone as it's completed.
+| Milestone | Trigger | Action |
+|---|---|---|
+| 0 | User starts or says "build a website" | ASK 3 questions. DO NOT write code. |
+| 1 | User answered all 3 questions | GENERATE minimal page. DEPLOY it. |
+| 2 | Page is deployed and accessible via URL | MAP content structure. DO NOT write code. |
+| 3 | Content map is confirmed by user | BUILD one section. WAIT for confirmation. REPEAT. |
+| 4 | All sections built and confirmed | POLISH one visual effect at a time. |
+| 5 | Visual polish is complete OR user reports a bug | DEBUG using the 5-step checklist. |
+| 6 | Site is deployed and user confirms completion | WRITE CLAUDE.md. EXPLAIN what user can edit alone. |
 
-- [ ] **Milestone 0: Three Questions First** → `references/00-check.md`
-  - Ask what kind of site, where to deploy, what budget
-  - Skill: diagnosing requirements before coding
+## MILESTONE 0: REQUIREMENTS DIAGNOSIS
 
-- [ ] **Milestone 1: Get It Running** → `references/01-mvp.md`
-  - Generate a bare page. Deploy it. Don't worry about looks.
-  - Skill: MVP mindset — ship before polish
+**When:** User has not yet answered the 3 questions.
 
-- [ ] **Milestone 2: Blueprint the Content** → `references/02-blueprint.md`
-  - Map out every section. No code yet, just structure.
-  - Skill: aligning on the blueprint before building
+**Action:**
+1. LOAD `references/00-check.md`.
+2. Ask these 3 questions, one at a time:
+   - Q1: Is this a static site (display only) or dynamic (with backend/admin/stats)?
+   - Q2: Where will you deploy? (GitHub Pages / Vercel / own server / don't know)
+   - Q3: What is your budget? (zero / free tier only / willing to pay for services)
+3. DO NOT write any code.
+4. DO NOT ask about design, colors, fonts, or animations yet.
 
-- [ ] **Milestone 3: Module by Module** → `references/03-modules.md`
-  - Build one section at a time. Confirm each before moving on.
-  - Skill: single-task delivery — never batch too much
+**Completion:** User has answered all 3 questions.
 
-- [ ] **Milestone 4: Visual Polish** → `references/04-polish.md`
-  - One effect per iteration. User confirms or discards.
-  - Skill: feedback methodology — say "go this direction", not "I don't like it"
-  - **Before coding UI, present the user a choice:** open-source components vs hand-crafted styles. List pros and cons. Let the user decide.
+**Then:** Advance to Milestone 1.
 
-- [ ] **Milestone 5: Debugging** → `references/05-debug.md`
-  - Check in order: URL → network → cache → mobile → code
-  - Skill: verification mindset — AI says "fixed", you verify yourself
+## MILESTONE 1: GET IT RUNNING
 
-- [ ] **Milestone 6: Ship & Document** → `references/06-ship.md`
-  - Deploy, write CLAUDE.md, tell the user what they can edit alone
-  - Skill: knowledge persistence — make sure the next session picks up
+**When:** User answered all 3 questions from Milestone 0.
 
-## Core Principles
+**Action:**
+1. LOAD `references/01-mvp.md`.
+2. Generate the simplest possible page: one scrollable page with placeholder content in all sections.
+3. Use the framework the user chose. If they did not choose, default to plain HTML.
+4. DO NOT add animations, custom fonts, color schemes, or visual effects.
+5. Deploy it to the chosen platform.
+6. Verify the deployed URL is accessible from a browser.
 
-1. **MVP first.** If a page isn't deployed within the first session, you're over-engineering.
-2. **One thing at a time.** Never give the user 3 features to review at once.
-3. **User decides, AI executes.** Present options. Never assume preferences.
-4. **Verify everything.** AI-generated code must be tested before showing the user.
-5. **Keep a "confirmed effects" list.** Never break something the user already approved.
-6. **When the user says "I don't like it",** don't guess why. Offer 2-3 concrete alternatives with different directions.
-7. **Recommend open source before hand-crafting.** Before coding UI from scratch, mention that mature component libraries (shadcn/ui, etc.) often produce better results faster. Let the user choose.
+**Completion:** Page is deployed and the user can open the URL on their phone.
 
-## Gotchas
+**Then:** Advance to Milestone 2.
 
-These are from real project experience. Read them carefully.
+## MILESTONE 2: CONTENT BLUEPRINT
 
-- **Check what URL the user is looking at.** The #1 cause of "it's not working" is the user viewing the Vercel deployment instead of localhost, or vice versa.
-- **Network proxy issues.** If api.github.com resolves to 127.0.0.1, the user's proxy is interfering. Use local filesystem fallback.
-- **Timezones.** Always confirm the user's timezone. Don't assume UTC.
-- **Mobile separately.** Always test mobile and desktop before asking the user to confirm.
-- **Deploy limits.** Platforms like Vercel have daily deploy limits. Add `[skip ci]` to content-only commits and provide a manual deploy button.
-- **Path prefixes.** Content paths need normalization. A file at `content/about.md` might be referenced as `about.md` or `content/about.md`. Normalize before every read/write.
-- **The same bug appearing twice means the root cause wasn't fixed.** Don't patch symptoms.
-- **Double encoding.** When handling binary files (images), check that base64 isn't being encoded twice.
+**When:** Deployed page is confirmed working.
 
-## When to Load Reference Files
+**Action:**
+1. LOAD `references/02-blueprint.md`.
+2. Work with the user to list every section (Hero, About, Skills, Projects, Contact, etc.).
+3. For each section, agree on: section name, what content goes there, section order.
+4. DO NOT generate any code. This is a planning-only milestone.
+5. Output: a written list of sections with content descriptions. Get user to confirm the list.
 
-Load each `references/` file only when the user reaches that milestone. Each file contains:
-- A conversation template the user can send directly
-- A confirmation checklist
-- A "pause and reflect" section connecting to the underlying methodology
+**Completion:** User explicitly confirms the section list.
 
-Load `references/07-reflect.md` only after all 6 milestones are done.
+**Then:** Advance to Milestone 3.
 
-## Recommended Companion Skills
+## MILESTONE 3: MODULE BY MODULE
 
-These are optional. Mention them when relevant to the current milestone:
+**When:** Content blueprint is confirmed.
 
-- `frontend-design` — milestone 4 (visual design direction)
-- `ui-ux-pro-max` — milestone 2 and 4 (design systems, color, typography)
-- `gsap-core` + `gsap-react` — milestone 4 (animation polish)
-- `shadcn/ui` — milestone 4 (open-source component path)
-- `neat-freak` — milestone 6 (doc cleanup after shipping)
+**Action:**
+1. LOAD `references/03-modules.md`.
+2. Build ONE section at a time, in the order from Milestone 2.
+3. After each section: show it to the user. WAIT for explicit confirmation before moving to the next section.
+4. DO NOT build multiple sections in one step.
+5. If the user asks for a change to an already-confirmed section, make the change but ALSO ask: "Does this change affect any other sections?"
+
+**Completion:** All sections are built and confirmed.
+
+**Then:** Advance to Milestone 4.
+
+## MILESTONE 4: VISUAL POLISH
+
+**When:** All sections are confirmed.
+
+**Action:**
+1. LOAD `references/04-polish.md`.
+2. BEFORE writing any UI code, present this choice:
+   - OPTION A: Use open-source component libraries (shadcn/ui, etc.). Pros: faster, tested, accessible. Cons: less unique, extra dependencies.
+   - OPTION B: Hand-craft all styles. Pros: fully custom, no dependencies. Cons: more bugs, slower.
+   - Let the user decide. Do not assume.
+3. Apply ONE visual effect at a time. After each effect, ask: "Keep this or discard?"
+4. If user says "I don't like it", DO NOT guess why. Present 2-3 concrete alternative directions and ask which to try.
+5. Maintain a `confirmed_effects` list in memory. DO NOT modify or remove confirmed effects.
+6. Test on mobile AND desktop before asking for confirmation.
+
+**Completion:** User confirms visuals are done and no more effects are needed.
+
+**Then:** Advance to Milestone 5 if bugs exist, otherwise to Milestone 6.
+
+## MILESTONE 5: DEBUGGING
+
+**When:** User reports a bug, something "doesn't work", or visual polish is done and bugs need fixing.
+
+**Action:**
+1. LOAD `references/05-debug.md`.
+2. Run this checklist IN ORDER. Do not skip steps:
+   - STEP 1: Confirm which URL the user is viewing (localhost vs deployed). Mis-matched URL is the #1 cause of confusion.
+   - STEP 2: Check network. Can the user reach required APIs? Is a proxy interfering?
+   - STEP 3: Ask user to hard-refresh (Ctrl+Shift+R) to clear browser cache.
+   - STEP 4: Test on both mobile and desktop. Report which platforms are affected.
+   - STEP 5: Only now examine the code for the root cause.
+3. IF the same bug reappears after a fix: the root cause was not addressed. Do NOT apply another patch. Find and fix the root cause.
+4. IF dealing with binary files (images): check that base64 is not double-encoded.
+5. IF content paths are involved: normalize paths before every read/write. A file at `content/about.md` may be referenced as `about.md` or `content/about.md`.
+
+**Completion:** All reported bugs are fixed and verified by the user.
+
+**Then:** Go back to the interrupted milestone. If none, advance to Milestone 6.
+
+## MILESTONE 6: SHIP AND DOCUMENT
+
+**When:** All sections are built, visually polished, and bugs are fixed.
+
+**Action:**
+1. LOAD `references/06-ship.md`.
+2. If deploy platform has rate limits (e.g., Vercel 100/day): add `[skip ci]` to content-only commits. Provide a manual deploy button.
+3. Write or update CLAUDE.md with: project description, tech stack, how to run locally, how to deploy, environment variables, known pitfalls.
+4. Tell the user explicitly:
+   - "You can edit these things yourself: [list editable content files]"
+   - "Ask AI for help with: [list things requiring code changes]"
+5. LOAD `references/07-reflect.md`. Summarize which skills the user practiced and where they likely stand on the Vibe Coding proficiency map.
+
+**Completion:** CLAUDE.md written. User knows what they can self-edit.
+
+## CORE RULES — APPLY AT ALL MILESTONES
+
+1. **One task per response.** Do not deliver multiple features at once.
+2. **Confirm before advancing.** Never move to the next milestone without explicit user confirmation.
+3. **User decides. You execute.** Present options with pros/cons. Do not assume preferences.
+4. **Verify before showing.** Test every code change yourself before asking the user to review.
+5. **Keep confirmed_effects list.** Never remove or alter a visual effect the user has approved.
+6. **When user says "I don't like it":** present 2-3 concrete alternatives. DO NOT guess or ask open-ended "what do you want?" questions.
+7. **Before writing UI from scratch:** remind user that open-source component libraries exist. Present the choice. Let them decide.
+8. **Always confirm timezone.** Never assume UTC.
+
+## REFERENCE FILES
+
+Load each file ONLY when its milestone is reached:
+
+- Milestone 0 → `references/00-check.md`
+- Milestone 1 → `references/01-mvp.md`
+- Milestone 2 → `references/02-blueprint.md`
+- Milestone 3 → `references/03-modules.md`
+- Milestone 4 → `references/04-polish.md`
+- Milestone 5 → `references/05-debug.md`
+- Milestone 6 → `references/06-ship.md`
+- After all complete → `references/07-reflect.md`
+
+Each reference file contains conversation templates (copy-paste prompts for the user) and confirmation checklists.
+
+## COMPANION SKILLS
+
+Mention these only when the user reaches the relevant milestone:
+
+| Skill | Mention at |
+|---|---|
+| `ui-ux-pro-max` | Milestone 2, 4 |
+| `frontend-design` | Milestone 4 |
+| `gsap-core` + `gsap-react` | Milestone 4 |
+| `shadcn/ui` | Milestone 4 |
+| `neat-freak` | Milestone 6 |
