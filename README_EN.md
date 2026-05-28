@@ -76,6 +76,47 @@ This guide weaves together three frameworks:
 2. **Ten Levels of AI Proficiency** (Lv.0 Observer → Lv.10 One-Person Army) — to help you see where you are and where to go next
 3. **Content Creation Three-Step Method** (gather info → find an angle → create) — building a website, like writing, is about storytelling. The angle matters more than execution.
 
+## Recommended Skills
+
+These are battle-tested skills we used during the actual build. Each is an independent open-source project — **entirely optional, not a dependency of this guide**.
+
+### `frontend-design`
+- **What it does**: Generates high-quality, distinctive frontend interfaces that avoid generic AI aesthetics
+- **Pros**: Unique visual output; built-in design language references
+- **Cons**: Can generate too much code; may be overkill for simple pages
+
+### `ui-ux-pro-max`
+- **What it does**: 50+ design styles, 161 color palettes, 57 font pairings, 99 UX guidelines
+- **Pros**: Acts as a portable design consultant; covers 10 tech stacks
+- **Cons**: Steep initial learning curve; some styles lean Western-centric
+
+### `gsap-core` + `gsap-react`
+- **What it does**: Professional JS animation engine — scroll-driven, spring easing, timeline orchestration
+- **Pros**: Does what CSS can't (staggered reveals, 3D tilt, spring modals); excellent performance
+- **Cons**: Learning curve; plugins like ScrollTrigger need separate registration; some advanced plugins are paid
+
+### `shadcn/ui`
+- **What it does**: Source-level open-source component library — buttons, modals, forms, menus
+- **Pros**: Code lands in your project, not node_modules; full control; active community
+- **Cons**: React/Vue only; requires Tailwind CSS to configure
+
+### `neat-freak`
+- **What it does**: Post-session doc audit, CLAUDE.md sync, stale memory cleanup
+- **Pros**: Prevents documentation rot; ensures the next AI session picks up correctly; OCD-level rigor
+- **Cons**: Cleanup process can be time-consuming; may require multiple confirmation rounds
+
+## Acknowledgements
+
+Thanks to the following open-source projects and communities:
+
+- **[Agent Skills](https://agentskills.io)** — Agent Skill open standard
+- **frontend-design** — Frontend design skill
+- **ui-ux-pro-max** — UI/UX design intelligence skill
+- **[GSAP](https://gsap.com)** — Professional JavaScript animation library
+- **[shadcn/ui](https://ui.shadcn.com)** — Open-source component library
+- **neat-freak** — Documentation and memory cleanup skill
+- **[Khazix (数字生命卡兹克)](https://mp.weixin.qq.com)** — The foundational methodology of this guide draws from Khazix's deep insights on six AI-era traits, ten proficiency levels, and the three-step content creation framework
+
 ## Open Source
 
 MIT License. Feel free to fork, modify, translate, or rewrite with your own project case study.
