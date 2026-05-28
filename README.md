@@ -2,7 +2,7 @@
 
 ---
 
-# Vibe Coding 新手上路指南
+# Vibe Coding 新手上路指南 skills
 
 > 从零搭一个个人网站，学会和 AI 高效协作。
 
