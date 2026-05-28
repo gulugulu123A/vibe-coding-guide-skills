@@ -109,12 +109,11 @@ cd vibe-coding-guide
 
 感谢以下开源项目和社区：
 
-- **[Agent Skills](https://agentskills.io)** — Agent Skill 开放标准
-- **frontend-design** — 前端设计 Skill
-- **ui-ux-pro-max** — UI/UX 设计智能 Skill
-- **[GSAP](https://gsap.com)** — 专业级 JavaScript 动画引擎
+- **[frontend-design](https://github.com/anthropics/claude-code/tree/main/plugins/frontend-design)** — 前端设计 Skill
+- **[ui-ux-pro-max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — UI/UX 设计智能 Skill
+- **[GSAP](https://github.com/greensock/gsap-skills)** — 专业级 JavaScript 动画引擎
 - **[shadcn/ui](https://ui.shadcn.com)** — 开源组件库
-- **neat-freak** — 文档与记忆整理 Skill
+- **[neat-freak](https://github.com/KKKKhazix/khazix-skills/tree/main/neat-freak)** — 文档与记忆整理 Skill
 - **[数字生命卡兹克](https://mp.weixin.qq.com)** — 本指南的底层方法论来源于卡兹克关于 AI 时代六个特质、十级使用等级和内容创作三步法的深度分享
 
 ## 开源
