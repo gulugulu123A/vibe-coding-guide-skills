@@ -34,24 +34,39 @@
 | **确认清单** | 做完这一步要验证的事 |
 | **停下来想想** | 这一步你学到了什么，对应什么底层能力 |
 
-## 如何下载使用
+## 安装与使用
 
-**方法 1：让 Claude Code 自动下载（推荐）**
+### 方法 1：安装为 Skill（推荐，可自动激活）
 
 直接复制下面这句发给 Claude Code：
 
-```bash
-帮我下载 vibe-coding-guide，地址是 https://github.com/gulugulu123A/vibe-coding-guide ，之后引导我从里程碑 0 开始。
+```
+帮我安装一个 skill，地址是 https://github.com/gulugulu123A/vibe-coding-guide-skills ，装好之后引导我从里程碑 0 开始。
 ```
 
-**方法 2：终端手动下载**
+Claude Code 会自动 clone 到 skills 目录。之后每次启动时，只要你的需求跟搭网站相关，Claude Code 会识别 `SKILL.md` 中的元数据并自动激活。
+
+### 方法 2：终端手动安装
 
 ```bash
-git clone https://github.com/gulugulu123A/vibe-coding-guide.git
-cd vibe-coding-guide
+# 克隆到 Claude Code 的 skills 目录
+git clone https://github.com/gulugulu123A/vibe-coding-guide-skills.git ~/.claude/skills/vibe-coding-guide-skills
 ```
 
-然后用你喜欢的 AI 工具打开这个目录，告诉它：
+重启 Claude Code 后生效。也可以手动激活：
+
+```
+/skill vibe-coding-guide-skills
+```
+
+### 方法 3：不用 Skill，直接当文档用
+
+```bash
+git clone https://github.com/gulugulu123A/vibe-coding-guide-skills.git
+cd vibe-coding-guide-skills
+```
+
+用你喜欢的 AI 工具打开这个目录，告诉它：
 
 > 参考这个目录里的文档，引导我从里程碑 0 开始搭一个个人网站。
 

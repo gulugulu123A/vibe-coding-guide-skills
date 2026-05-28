@@ -34,24 +34,39 @@ Work through 7 milestones in order. Each milestone includes:
 | **Confirmation Checklist** | Things to verify before moving on |
 | **Pause and Reflect** | What you learned and which core skills you're building |
 
-## How to Download
+## Installation & Usage
 
-**Method 1: Let Claude Code download it (Recommended)**
+### Method 1: Install as a Skill (Recommended — auto-activates)
 
 Copy and send this to Claude Code:
 
-```bash
-Download the vibe-coding-guide from https://github.com/gulugulu123A/vibe-coding-guide, and then walk me through starting from Milestone 0.
+```
+Install a skill from https://github.com/gulugulu123A/vibe-coding-guide-skills, then walk me through starting from Milestone 0.
 ```
 
-**Method 2: Download via terminal**
+Claude Code will clone it into your skills directory. After that, whenever your request involves building a website, Claude Code will detect the metadata in `SKILL.md` and activate this skill automatically.
+
+### Method 2: Manual terminal install
 
 ```bash
-git clone https://github.com/gulugulu123A/vibe-coding-guide.git
-cd vibe-coding-guide
+# Clone into Claude Code's skills directory
+git clone https://github.com/gulugulu123A/vibe-coding-guide-skills.git ~/.claude/skills/vibe-coding-guide-skills
 ```
 
-Then open this directory with your preferred AI tool and say:
+Restart Claude Code, or activate manually:
+
+```
+/skill vibe-coding-guide-skills
+```
+
+### Method 3: Use as documentation (without installing as a skill)
+
+```bash
+git clone https://github.com/gulugulu123A/vibe-coding-guide-skills.git
+cd vibe-coding-guide-skills
+```
+
+Open this directory with your preferred AI tool and say:
 
 > Reference the docs in this directory and guide me through building a personal website starting from Milestone 0.
 
