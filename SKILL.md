@@ -158,8 +158,8 @@ Track which milestone the user is on. Start at Milestone 0. Only advance when th
 
 Load each file ONLY when its milestone is reached:
 
-- Milestone 0 → `references/00-check.md`
-- Milestone 1 → `references/01-mvp.md`
+- Milestone 0 → `references/00-check.md`. If user doesn't understand deployment/domains, also load `references/deploy-options.md`.
+- Milestone 1 → `references/01-mvp.md`. If deployment is not yet set up, load `references/deploy-options.md`.
 - Milestone 2 → `references/02-blueprint.md`
 - Milestone 3 → `references/03-modules.md`
 - Milestone 4 → `references/04-polish.md`
