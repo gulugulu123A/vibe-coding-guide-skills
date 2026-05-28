@@ -165,22 +165,6 @@ This guide weaves together three frameworks:
 2. **Ten Levels of AI Proficiency** (Lv.0 Observer → Lv.10 One-Person Army) — to help you see where you are and where to go next
 3. **Content Creation Three-Step Method** (gather info → find an angle → create) — building a website, like writing, is about storytelling. The angle matters more than execution.
 
-## A Final Word
-
-AI is evolving at breakneck speed. When you finish building a project with this guide, you will be genuinely amazed by what AI can do — that's normal. Everyone has that moment the first time.
-
-But here's something more important: **don't become over-reliant on AI.**
-
-The ability to keep learning and thinking deeply is more valuable than ever in the AI era. When AI levels the playing field on execution, a hundred people using the exact same AI tools will still produce outputs a hundred times apart in quality.
-
-The gap doesn't come from the tools. Not from the techniques. Not from whose Skill file is fancier. **It comes from what's inside a person's head.** Their understanding of the world. Their taste. Their value system. Their sense of what is good. These are things AI cannot give you.
-
-The endgame of tool democratization is not the democratization of people — it's the opposite.
-
-AI doesn't stop evolving. It's not a skill you learn once and put aside. It evolves, and your relationship with it evolves too. So in this chaotic era, figure out who you want to become — and move forward. Don't look back.
-
-Always stay curious.
-
 ## Recommended Skills
 
 These are battle-tested skills we used during the actual build. Each is an independent open-source project — **entirely optional, not a dependency of this guide**.
