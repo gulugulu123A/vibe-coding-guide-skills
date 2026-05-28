@@ -109,13 +109,12 @@ These are battle-tested skills we used during the actual build. Each is an indep
 
 Thanks to the following open-source projects and communities:
 
-- **[Agent Skills](https://agentskills.io)** — Agent Skill open standard
-- **frontend-design** — Frontend design skill
-- **ui-ux-pro-max** — UI/UX design intelligence skill
-- **[GSAP](https://gsap.com)** — Professional JavaScript animation library
+- **[frontend-design](https://github.com/anthropics/claude-code/tree/main/plugins/frontend-design)** — Frontend design skill
+- **[ui-ux-pro-max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** — UI/UX design intelligence skill
+- **[GSAP](https://github.com/greensock/gsap-skills)** — Professional JavaScript animation library
 - **[shadcn/ui](https://ui.shadcn.com)** — Open-source component library
-- **neat-freak** — Documentation and memory cleanup skill
-- **[Khazix (数字生命卡兹克)](https://mp.weixin.qq.com)** — The foundational methodology of this guide draws from Khazix's deep insights on six AI-era traits, ten proficiency levels, and the three-step content creation framework
+- **[neat-freak](https://github.com/KKKKhazix/khazix-skills/tree/main/neat-freak)** — Documentation and memory cleanup skill
+- **WeChat Official Account [数字生命卡兹克]** — The foundational methodology of this guide draws from Khazix's deep insights on six AI-era traits, ten proficiency levels, and the three-step content creation framework
 
 ## Open Source
 
