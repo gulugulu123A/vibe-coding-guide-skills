@@ -112,22 +112,22 @@ https://mp.weixin.qq.com/s/AA2NHww4jUBuAfi10EYICw
 
 ### 方法 1：安装为 Skill（推荐，可自动激活）
 
-直接复制下面这句发给 Claude Code：
+将下面这句发给你的 AI 编程 Agent（Claude Code、Cursor、Copilot、Codex 等均适用）：
 
 ```
 帮我安装一个 skill，地址是 https://github.com/gulugulu123A/vibe-coding-guide-skills ，装好之后引导我从里程碑 0 开始。
 ```
 
-Claude Code 会自动 clone 到 skills 目录。之后每次启动时，只要你的需求跟搭网站相关，Claude Code 会识别 `SKILL.md` 中的元数据并自动激活。
+Agent 会自动 clone 到 skills 目录。之后每次启动时，只要你的需求跟搭网站相关，Agent 会识别 `SKILL.md` 中的元数据并自动激活。
 
 ### 方法 2：终端手动安装
 
 ```bash
-# 克隆到 Claude Code 的 skills 目录
+# 克隆到 Agent 的 skills 目录（以 Claude Code 为例）
 git clone https://github.com/gulugulu123A/vibe-coding-guide-skills.git ~/.claude/skills/vibe-coding-guide-skills
 ```
 
-重启 Claude Code 后生效。也可以手动激活：
+重启你的 AI 编程工具后生效。也可以手动激活：
 
 ```
 /skill vibe-coding-guide-skills

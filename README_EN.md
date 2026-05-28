@@ -112,22 +112,22 @@ Work through 7 milestones in order. Each milestone includes:
 
 ### Method 1: Install as a Skill (Recommended — auto-activates)
 
-Copy and send this to Claude Code:
+Copy and send this to your AI coding agent (works with Claude Code, Cursor, Copilot, Codex, etc.):
 
 ```
 Install a skill from https://github.com/gulugulu123A/vibe-coding-guide-skills, then walk me through starting from Milestone 0.
 ```
 
-Claude Code will clone it into your skills directory. After that, whenever your request involves building a website, Claude Code will detect the metadata in `SKILL.md` and activate this skill automatically.
+Your agent will clone it into its skills directory. After that, whenever your request involves building a website, the agent will detect the metadata in `SKILL.md` and activate this skill automatically.
 
 ### Method 2: Manual terminal install
 
 ```bash
-# Clone into Claude Code's skills directory
+# Clone into your agent's skills directory (Claude Code example path)
 git clone https://github.com/gulugulu123A/vibe-coding-guide-skills.git ~/.claude/skills/vibe-coding-guide-skills
 ```
 
-Restart Claude Code, or activate manually:
+Restart your AI coding tool, or activate manually:
 
 ```
 /skill vibe-coding-guide-skills
