@@ -80,6 +80,52 @@ There are many tutorials out there — most are thorough, but also lengthy. Our 
 
 We hope this guide helps you take that first step.
 
+## Afterword
+
+Let me share some things I've been seeing lately.
+
+About whether AI is replacing people or empowering them. About whether entry-level positions will be wiped out entirely. About where CS students should even be heading. Everyone has their own answer, but the one thing we can agree on is this: the question itself can no longer be avoided.
+
+---
+
+In 1950, Alan Turing asked: "Can machines think?"
+
+He designed a test. If a machine could hold a conversation indistinguishable from a human, then we would have to admit it was thinking. That's the famous Turing Test.
+
+Over seventy years later, GPT-5.2 can pass the Turing Test by writing code. Claude Code can finish a week's worth of your work in a day.
+
+With this guide, you'll finish a whole project in maybe two days. When it's done, you'll probably be stunned — that's normal. Everyone feels that way.
+
+But Turing's question isn't finished yet.
+
+Machines do seem to be thinking. So flip the question: **when machines learn to think, what should humans do?**
+
+When AI levels the playing field on execution, a hundred people using the exact same tools can still produce outputs a hundred times apart. The difference isn't about who writes better prompts or whose Skill file is fancier.
+
+It's about what's inside that person's head. How they understand the world. What level their taste operates at. Whether they can tell what's good from what's not. These are things AI cannot give you.
+
+There's something else worth thinking about.
+
+For a senior developer who's spent a decade falling into every pitfall, architecting systems, leading teams — AI is leverage. The repetitive work they've long since internalized gets taken off their plate, and they can focus entirely on higher-level decisions. AI makes them stronger.
+
+But what about a beginner, just starting out?
+
+Those "tedious tasks" that AI elegantly skips — hand-writing form validation, tweaking CSS layouts over and over, getting stuck on a file path for half an hour — to a senior developer, those are inefficiencies. But to a beginner, those very struggles are what build the feeling for code. You fall into a hundred holes yourself, and only then, at hole number one-oh-one, does your gut whisper "something's off here." That intuition doesn't come from reading books. It comes from trial and error, over and over.
+
+**AI replaces the brain. Tokens take over thinking.**
+
+When AI handles all the grinding a beginner was supposed to go through, where does that beginner get exposed to real business logic? Where does that instinct — "I can't explain why, but something feels wrong" — slowly take root? There's no standard answer to this question. But everyone who's just starting out owes it to themselves to ask it at least once.
+
+Here's one good thing about this field: it doesn't care much about your background. It cares whether you can build something. AI has pushed that threshold even lower. Skills that used to take three years to learn can now be done in conversation. That's genuinely a good thing. But the lower the threshold, the wider the gap between the people who walk through it.
+
+Tools put everyone on the same starting line. But once the race begins, who pulls ahead and who falls behind — that has nothing to do with the tools anymore.
+
+So in this chaotic era, figure out who you want to become. Then move forward. Don't look back.
+
+Always stay curious.
+
+**Alright, enough of that. Now let's get into the guide.**
+
 ## What This Is
 
 A hands-on Vibe Coding playbook that uses **building a personal website** as a complete case study. By the time you finish the project, you'll naturally understand:
@@ -164,44 +210,6 @@ This guide weaves together three frameworks:
 1. **Six Foundational Traits** (curiosity, reliability, fact-checking obsession, cross-disciplinary thinking, tolerance for uncertainty, low ego + high drive) — these determine whether you'll go far in the AI era
 2. **Ten Levels of AI Proficiency** (Lv.0 Observer → Lv.10 One-Person Army) — to help you see where you are and where to go next
 3. **Content Creation Three-Step Method** (gather info → find an angle → create) — building a website, like writing, is about storytelling. The angle matters more than execution.
-
-## A Final Word
-
-I've been seeing a lot of discussion lately. About whether AI is replacing people or empowering them. About whether entry-level positions will be wiped out entirely. About where CS students should even be heading. Everyone has their own answer, but the one thing we can agree on is this: the question itself can no longer be avoided.
-
-In 1950, Alan Turing asked: "Can machines think?"
-
-He designed a test. If a machine could hold a conversation indistinguishable from a human, then we would have to admit it was thinking. That's the famous Turing Test.
-
-Over seventy years later, GPT-5.2 can pass the Turing Test by writing code. Claude Code can finish a week's worth of your work in a day. With this guide, you'll finish a whole project in maybe two days. When it's done, you'll probably be stunned — that's normal. Everyone feels that way.
-
-But Turing's question isn't finished yet.
-
-Machines do seem to be thinking. So flip the question: **when machines learn to think, what should humans do?**
-
-When AI levels the playing field on execution, a hundred people using the exact same tools can still produce outputs a hundred times apart. The difference isn't about who writes better prompts or whose Skill file is fancier.
-
-It's about what's inside that person's head. How they understand the world. What level their taste operates at. Whether they can tell what's good from what's not. These are things AI cannot give you.
-
-There's something else worth thinking about.
-
-For a senior developer who's spent a decade falling into every pitfall, architecting systems, leading teams — AI is leverage. The repetitive work they've long since internalized gets taken off their plate, and they can focus entirely on higher-level decisions. AI makes them stronger.
-
-But what about a beginner, just starting out?
-
-Those "tedious tasks" that AI elegantly skips — hand-writing form validation, tweaking CSS layouts over and over, getting stuck on a file path for half an hour — to a senior developer, those are inefficiencies. But to a beginner, those very struggles are what build the feeling for code. You fall into a hundred holes yourself, and only then, at hole number one-oh-one, does your gut whisper "something's off here." That intuition doesn't come from reading books. It comes from trial and error, over and over.
-
-**AI replaces the brain. Tokens take over thinking.** This doesn't just apply to code.
-
-When AI handles all the grinding a beginner was supposed to go through, where does that beginner get exposed to real business logic? Where does that instinct — "I can't explain why, but something feels wrong" — slowly take root? There's no standard answer to this question. But everyone who's just starting out owes it to themselves to ask it at least once.
-
-Here's one good thing about this field: it doesn't care much about your background. It cares whether you can build something. AI has pushed that threshold even lower. Skills that used to take three years to learn can now be done in conversation. That's genuinely a good thing. But the lower the threshold, the wider the gap between the people who walk through it.
-
-Tools put everyone on the same starting line. But once the race begins, who pulls ahead and who falls behind — that has nothing to do with the tools anymore.
-
-So in this chaotic era, figure out who you want to become. Then move forward. Don't look back.
-
-Always stay curious.
 
 ## Recommended Skills
 
