@@ -57,14 +57,14 @@ cd vibe-coding-guide
 
 ## 目录
 
-- [里程碑 0：开工之前先问自己三个问题](./00-check.md)
-- [里程碑 1：先把页面跑起来](./01-mvp.md)
-- [里程碑 2：梳理内容结构](./02-blueprint.md)
-- [里程碑 3：逐模块交付](./03-modules.md)
-- [里程碑 4：视觉打磨的迭代方法](./04-polish.md)
-- [里程碑 5：调试排查心法](./05-debug.md)
-- [里程碑 6：收尾与沉淀](./06-ship.md)
-- [终章：回头看——你在 Vibe Coding 地图上的位置](./07-reflect.md)
+- [里程碑 0：开工之前先问自己三个问题](./references/00-check.md)
+- [里程碑 1：先把页面跑起来](./references/01-mvp.md)
+- [里程碑 2：梳理内容结构](./references/02-blueprint.md)
+- [里程碑 3：逐模块交付](./references/03-modules.md)
+- [里程碑 4：视觉打磨的迭代方法](./references/04-polish.md)
+- [里程碑 5：调试排查心法](./references/05-debug.md)
+- [里程碑 6：收尾与沉淀](./references/06-ship.md)
+- [终章：回头看——你在 Vibe Coding 地图上的位置](./references/07-reflect.md)
 
 ## 核心理念
 

@@ -57,14 +57,14 @@ Then open this directory with your preferred AI tool and say:
 
 ## Table of Contents
 
-- [Milestone 0: Three Questions Before You Start](./00-check.md)
-- [Milestone 1: Get a Page Running](./01-mvp.md)
-- [Milestone 2: Map Out Your Content Structure](./02-blueprint.md)
-- [Milestone 3: Ship Module by Module](./03-modules.md)
-- [Milestone 4: Visual Polish — The Iteration Method](./04-polish.md)
-- [Milestone 5: Debugging Mindset](./05-debug.md)
-- [Milestone 6: Ship It and Document It](./06-ship.md)
-- [Final Chapter: Where You Stand on the Vibe Coding Map](./07-reflect.md)
+- [Milestone 0: Three Questions Before You Start](./references/00-check.md)
+- [Milestone 1: Get a Page Running](./references/01-mvp.md)
+- [Milestone 2: Map Out Your Content Structure](./references/02-blueprint.md)
+- [Milestone 3: Ship Module by Module](./references/03-modules.md)
+- [Milestone 4: Visual Polish — The Iteration Method](./references/04-polish.md)
+- [Milestone 5: Debugging Mindset](./references/05-debug.md)
+- [Milestone 6: Ship It and Document It](./references/06-ship.md)
+- [Final Chapter: Where You Stand on the Vibe Coding Map](./references/07-reflect.md)
 
 ## Core Philosophy
 
