@@ -82,7 +82,7 @@ We hope this guide helps you take that first step.
 
 ## Afterword
 
-Let me share some things I've been seeing lately.
+Let me talk about some content I've recently come across, with insights drawn from articles I've read lately:
 
 About whether AI is replacing people or empowering them. About whether entry-level positions will be wiped out entirely. About where CS students should even be heading. Everyone has their own answer, but the one thing we can agree on is this: the question itself can no longer be avoided.
 
